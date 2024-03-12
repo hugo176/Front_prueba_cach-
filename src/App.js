@@ -8,7 +8,7 @@ function App() {
  // const [showModal, setShowModal] = useState(false);
 
   const handleBottonClick = () => {
-    console.log("1"); 
+    console.log("2"); 
   };
 
   return (
