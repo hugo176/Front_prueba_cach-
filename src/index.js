@@ -18,3 +18,12 @@ const render = () => {
 }
 
 render();
+
+
+// Hot reloading
+if (module.hot) {
+	// Reload components
+	module.hot.accept('./App', () => {
+		render()
+	})
+}
