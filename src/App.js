@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hola v1.1.1</h1>
+      <h1>Hola v1.1.2</h1>
       <button onClick={() => handleBottonClick()}>Comprobar</button>
     </div>
   );
