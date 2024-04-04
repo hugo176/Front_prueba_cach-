@@ -42,7 +42,7 @@ const TaskForm = () => {
     if (params?.id) {
       setTask(taskList?.find(task => task?.id === params?.id));
     }
-  }, []);
+  }, [params?.id, taskList]);
 
   return (
     <form onSubmit={handleSubmit} className='bg-zinc-800 max-w-sm p-4'>
@@ -75,7 +75,7 @@ const TaskForm = () => {
         >
       </textarea>
       <button
-        className='bg-blue-300 px-2 py-1 rounded-md text-xs'
+        className='bg-blue-300 px-2 py-1 rounded-md text-md'
       >Guardar</button>
     </form>
   )
